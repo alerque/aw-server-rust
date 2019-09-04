@@ -39,7 +39,7 @@ install-opt: target/package
 service-symlink-opt:
 	ln -sf $(SERVICE_OPT) ~/.config/systemd/user/aw-server-rust.service
 
-install-usr:
+install-usr: target/package
 	mkdir -p $(DESTDIR)$(PREFIX)/share/activitywatch
 	cp -rf target/package/* $(DESTDIR)$(PREFIX)/share/activitywatch
 	mkdir -p $(DESTDIR)$(PREFIX)/bin/
