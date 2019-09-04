@@ -3,8 +3,8 @@
 all: aw-server-rust
 build: aw-server-rust
 
-DESTDIR :=
-PREFIX := /usr/local
+DESTDIR ?=
+PREFIX ?= /usr/local
 SERVICE_OPT=$(DESTDIR)/opt/activitywatch/aw_server_rust/aw-server-rust.service
 SERVICE_USR=$(DESTDIR)$(PREFIX)/share/activitywatch/aw_server_rust/aw-server-rust.service
 
