@@ -1,4 +1,4 @@
-.PHONY: all aw-server-rust aw-webui install install-usr install-opt package service-symlink-opt service-symlink-usr
+.PHONY: all build aw-server-rust aw-webui install install-usr install-opt package service-symlink-opt service-symlink-usr
 
 all: aw-server-rust
 build: aw-server-rust
